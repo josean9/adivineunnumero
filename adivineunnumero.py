@@ -176,11 +176,55 @@ def pedir_dificultad():
                                         print("El numero es mas grande")
                                         intentos +=1
                                         continue 
-            elif dificultad == 6:
-                   
             else:
                 print("Introduzca un numero de entre el 1 y el 4")
                 pass
+            """elif dificultad == 6:
+                minimo = input("Cual es el numero menor: ")
+                try:
+                    minimo = int(minimo)
+                    """print(type(minimo))"""
+                except:
+                    print("Escriba un numero")
+                    pass
+                else:
+                    maximo = input("Cual es el numero mayor: ")
+                    try:
+                        maximo = int(maximo)
+                    except:
+                        print("Escriba un numero")
+                        pass
+                    else:
+                        numero6 = random.randint(minimo, maximo)
+                        print("Tu numero esta entre {} y {}".format(minimo, maximo))
+                        intento1 = random.randint(minimo, maximo)
+                        if intento1 == numero6:
+                            print("La IA acerto")
+                            else:
+                                print("Primer intento fallido")
+                                if intento1 < numero6:
+                                    intento2 = random.randint(intento1, maximo)
+                                    if intento2 == numero6:
+                                        print("La IA acero")
+                                    else:
+                                        print("Segundo intento fallido")
+                                        if intento2 < numero6:
+                                            intento3 = random.randint(intento2, maximo)
+                                            if intento3 == numero6:
+                                                print("La IA acerto")
+                                            else:
+                                                print("Tercer intento fallido")
+                                                pass
+                                else:
+                                    intento2 =random.randint(minimo, intento1)
+                                    if intento2 == numero6:
+                                        print("La IA acero")
+                                    else:
+                                        print("Segundo intento fallido")
+                                        
+                numero6 =
+                print("La IA escoge el numero")"""
+            
 
 """def juego():
     intentos = 0
